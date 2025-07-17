@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-Shop Explorer</title>
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-xl">E-Shop Explorer</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900"><i class="fa fa-home"></i> home</a>
+                <a href="products.html" class="mr-5 hover:text-gray-900"><i class="fa fa-product-hunt"></i> products</a>
+                <a href="" class="mr-5 hover:text-gray-900"><i class="fa fa-info-circle"></i> about</a>
+                <a href="contacts.html" class="mr-5 hover:text-gray-900"><i class="fa fa-star"></i> Interests</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section Start -->
+    <section
+        class="flex flex-col md:flex-row items-center justify-between px-4 py-10 bg-gradient-to-br from-blue-50 to-blue-100 min-h-[70vh]">
+        <div class="flex-1 flex flex-col items-start mb-8 md:mb-0 md:mr-8">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                Discover Top Products <br class="hidden md:block" />with <span class="text-blue-600">E-Shop
+                    Explorer</span>
+            </h1>
+            <p class="text-gray-700 mb-6 text-base md:text-lg">
+                Explore trending items, watch product videos, and find the best deals tailored for you.
+            </p>
+            <div id="browserLocation" class="text-sm text-gray-500 mt-2"></div>
+        </div>
+        <div class="flex-1 flex flex-col items-center">
+            <!-- Embedded YouTube video with subtitles -->
+            <div class="w-full max-w-md aspect-video mb-4">
+                <video class="rounded-lg shadow-lg w-full h-full" controls
+                    poster="https://images.unsplash.com/photo-1515165562835-cd4a3e70b315?auto=format&fit=crop&w=600&q=80">
+                    <source src="assets/Set1 Video.mp4" type="video/mp4">
+                    <track label="English" kind="subtitles" srclang="en" src="./assets/intro.vtt" default>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Audio clip promoting a featured product -->
+            <audio controls class="mt-2 w-full max-w-md">
+                <source src="./assets/Set1 Audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Tailblocks</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2020 Tailblocks —
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@knyttneve</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        const browserLocation = document.getElementById('browserLocation');
+        let browser = navigator.userAgent;
+        let locationText = 'Detecting location...';
+
+        // Location detection
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    locationText = `Lat: ${position.coords.latitude.toFixed(2)}, Lon: ${position.coords.longitude.toFixed(2)}`;
+                    browserLocation.textContent = `Location: ${locationText}`;
+                },
+                () => {
+                    browserLocation.textContent = `Location: Not allowed`;
+                }
+            );
+        } else {
+            browserLocation.textContent = `Location: Not supported`;
+        }
+
+        // Interest Modal logic
+        const interestBtn = document.getElementById('interestBtn');
+        const interestModal = document.getElementById('interestModal');
+        const closeModal = document.getElementById('closeModal');
+        const interestForm = document.getElementById('interestForm');
+
+        interestBtn.addEventListener('click', () => {
+            interestModal.classList.remove('hidden');
+        });
+
+        closeModal.addEventListener('click', () => {
+            interestModal.classList.add('hidden');
+        });
+
+        interestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for submitting your interest!');
+            interestModal.classList.add('hidden');
+            interestForm.reset();
+        });
+
+        // Search form logic (basic)
+        document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const query = document.getElementById('searchInput').value.trim();
+            if (query) {
+                alert('Searching for: ' + query);
+                // Implement search logic here
+            }
+        });
+    </script>
+
+</body>
+
+</html>
